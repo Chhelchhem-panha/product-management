@@ -1,7 +1,5 @@
-export default function Footer(){
-    return(
-        <footer>
-            <h1>Footer</h1>
-        </footer>
+export default function Footer() {
+    return (
+        <h1>Hello</h1>
     )
 }
