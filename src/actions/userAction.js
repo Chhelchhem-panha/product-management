@@ -1,26 +1,18 @@
 import axios from "axios"
 
 const BASE_URL = 'https://api.escuelajs.co/api/v1/'
-/// MARK: insert product to api
-export const createProduct = async (product) => {
-    const resp = await fetch(`${BASE_URL}products/`, 
-    {
+
+export const createUser = async (user) => {
+    const resp = await fetch(`${BASE_URL}/users`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(product)
+        body: JSON.stringify(user)
     })
-    return resp.json()
+  return resp.json()
 }
 
-//GET CATEGORIES
-export const getCategories = async () => {
-    const resp = await fetch(`${BASE_URL}categories`)
-    return resp.json()
-}
-
-/// MARK: Upload image to APIs
 export const uploadImage = async (image) => {
     const response = await axios({
         method: "POST",
@@ -33,6 +25,3 @@ export const uploadImage = async (image) => {
     })
     return response
 }
-
-
-

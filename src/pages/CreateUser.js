@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
-import { createUser } from './../actions/actions/userAction';
-import { uploadImage } from './../actions/actions/productAction';
+import { uploadImage } from './../actions/productAction';
+import { createUser } from './../actions/userAction';
+
 
 export default function UserForm(){
     const navigate = useNavigate()
