@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Editor } from 'primereact/editor';
-        
+import { Editor } from "primereact/editor";
 
 export default function MyEditor() {
   const [text, setText] = useState('');

@@ -77,9 +77,9 @@ export default function UserForm(){
         <div className="mb-3">
             <label htmlFor="password" className="form-label">Password</label>
             <input 
-                type="text" 
+                type="password" 
                 className="form-control"
-                placeholder="Panha@$-88.00"
+                placeholder="**********"
                 name="password"
                 onChange={handleInputChange}
             />
